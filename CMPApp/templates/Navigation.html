@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Important Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Title -->
+    <title>Campus-MarketPlace</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    <style>
+      {% block style %}
+      {% endblock %}
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- NavBar -->
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg white-nav-top fixed-top">
+
+            <div class="container top-navbar-container">
+                <a href="{% url 'home' %}" class="navbar-brand nav-image img-responsive"><img src="{% static 'images/logo/Campus.png' %}" class="img-fluid"></a>
+
+                <button type="button" class="navbar-toggler navbar-brand" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars toggle-bar-style"></i></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'search' %}">Search Resources</a>
+                        </li>
+
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'share' %}">Sell/Donate</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-items nav-link" href="../BM/buyerrequests.html"><span>Buyer Requests</span></a>
+                        </li> -->
+                        {% endif %}
+
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'faq' %}"><span>FAQ</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'contact' %}"><span>Contact Us</span></a>
+                        </li>
+
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <div class="dropdown">
+                              {% if user.avtar %}
+                                <button class="profile-btn-style nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="{{user.avtar.url}}" class="nav-user-image">
+                                </button>
+                                {% else %}
+                                <button class="profile-btn-style nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="{% static 'images/customers/customer-1.png' %}" class="nav-user-image">
+                                </button>
+                                {% endif %}
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+                                    <a class="dropdown-item" href="{% url 'dashboard' %}">My Dashboard</a>
+                                    <!-- <a class="dropdown-item" href="../BM/mysoldnotes.html">Requests</a> -->
+                                    <a class="dropdown-item" href="{% url 'newrequests' %}">My Requested Notes</a>
+                                    <a class="dropdown-item" href="../BM/change-password.html">Change Password</a>
+                                    <a class="dropdown-item" href="{% url 'logout' %}">LOGOUT</a>
+                                </div>
+                            </div>
+                        </li>
+                        {% endif %}
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <button type="submit" class="btn log-btn nav-link" onclick="location.href='{% url 'logout' %}'">Logout</button>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <button type="submit" class="btn log-btn nav-link" onclick="location.href='{% url 'login' %}'">Login</button>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer-border"></div>
+    <div class="container">
+        <div class="row footer-padding">
+
+            <div class="social-icons-alignment">
+
+                <span>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="cc-p">Copyright &#169; aypya All rights reserved.</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <script type="text/javascript">
+    {% block script %}
+    {% endblock %}
+
+    </script>
+
+</body>
+
+</html>

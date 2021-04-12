@@ -1,0 +1,80 @@
+{% extends 'Navigation.html' %}
+{% load static %}
+
+{% block body %}
+
+    <div class="container-fluid bg-image-user img-responsive">
+
+        <div class="in-image user-profile-tag pp">Contact Us</div>
+
+    </div>
+
+    <div class="container">
+
+        <form class="form-container" method="post" action="{% url 'suggest' %}">
+          {% csrf_token %}
+
+
+
+            <div class="row padding-im">
+
+                <div class="col-md-12 all-heading">
+                    Get In Touch
+
+                    <div class="form-label ph">Let us know how to get back to you</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+
+                        <label class="form-label re">Full Name</label>
+                        <input type="text" name="name" class="form-control form-box-user" placeholder="Enter your full name" id="fname" required>
+
+                    </div>
+
+                    <div class="form-group ph">
+
+                        <label class="form-label re">Email Address</label>
+                        <input type="email" name="email" class="form-control form-box-user" placeholder="Enter your email address" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label class="form-label re">Subject</label>
+                        <input type="text" name="subject" class="form-control form-box-user" placeholder="Subject" id="subject" required>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+
+                    <div class="form-group">
+
+                        <label class="form-label re">Comments/Questions</label>
+                        <textarea type="text" name="cmt" class="form-control comment-box" rows="10" placeholder="Comments..." id="cmt" required></textarea>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-6 col-6">
+
+
+                    <button type="submit" class="btn user-submit-btn-style">SUBMIT</button>
+
+                </div>
+
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+{% endblock %}

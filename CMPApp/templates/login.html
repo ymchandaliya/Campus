@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Important Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Campus-MarketPlace</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+</head>
+
+<body>
+
+    <div class="bg-image-main" id="login-page">
+
+        <div class="inner-box">
+
+            <!-- Logo -->
+
+            <div id="logo" class="col-12" align="center">
+
+                <img src="{% static 'images/logo/Campus.png' %}" class="img-responsive">
+
+            </div>
+
+            <!-- White Box Login -->
+
+            <div class="child-container">
+
+                <div class="main-header">
+
+                    Login
+
+                </div>
+
+                <div class="main-description padding-description">
+
+                    <p>Enter email address and password to login</p>
+
+                </div>
+
+                <!-- Login Form -->
+                <form class="form-box" method="post" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <div class="form-group paddingbottom-30">
+
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control form-box-content non-pass" name="email" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+
+                    </div>
+
+                    <div class="form-group paddingbottom-30">
+
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <a href="../BM/forgotpassword.html" class="forgot-password">Forgot Password?</a>
+                        <input type="password" class="form-control form-box-content pass" name="pass" id="inputPassword" name="password" placeholder="Password" required>
+                        <span class="show-hide-eye fa fa-fw fa-eye field-icon toggle-password" toggle="#inputPassword"></span>
+
+                    </div>
+
+                    <div class="form-group form-check margintop-20">
+
+                        <input type="checkbox" class="form-check-input remember-me-checkbox" id="">
+                        <label class="form-check-label remember-me-tag" for="exampleCheck1" id="">Remember me</label>
+
+                    </div>
+
+                    <div class="credential-btn-padding">
+
+                        <button type="submit" class="btn credential-btn-style">Login</button>
+
+                    </div>
+
+                    <div class="end-description-outer">
+
+                        <p class="end-description-content">Don't have an account?<a href="{% url 'signup' %}"> SignUp</a></p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- <script src="{% static 'js/script.js' %}"></script> -->
+
+</body>
+
+</html>
+
+
+<!--<img src="./images/logo/eye.png">-->

@@ -1,0 +1,202 @@
+{% extends 'Navigation.html' %}
+{% load static %}
+
+{% block style %}
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.bg-image-main {
+    background-image: url(../images/backgroung-image/banner-with-overlay.jpg);
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.inner-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.child-container {
+    margin-top: 25px;
+    width: 580px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#ev {
+    zoom: 93%;
+}
+
+.ev-padding {
+    padding-left: 9px;
+}
+
+.logo-padding-ev {
+    padding-top: 30px;
+}
+
+.all-heading-ev {
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #6255a5;
+}
+
+.greet {
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+.ev-desc {
+    padding-top: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.ev-btn-padding {
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.ev-btn-style {
+    background-color:#6255a5;
+    width: 520px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.ev-btn-style:hover,
+.ev-btn-style:focus {
+    color: #fff;
+    border: none;
+    background-color: #4f4294;
+}
+
+/* Responsive */
+@media only screen and (max-width: 765px) {
+    .ev-btn-style {
+        width :485px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .child-container {
+        width: 500px;
+    }
+    .ev-btn-style {
+        width: 440px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .child-container {
+        width: 420px;
+    }
+    .ev-btn-style {
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .child-container {
+        width: 340px;
+    }
+    .ev-btn-style {
+        width: 280px;
+    }
+    .logo-width {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .child-container {
+        width: 320px;
+    }
+    .ev-btn-style {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .child-container {
+        width: 290px;
+    }
+    .ev-btn-style {
+        width: 230px;
+    }
+}
+{% endblock %}
+
+{% block body %}
+    <div class="bg-image-main" id="ev">
+
+        <div class="inner-box">
+
+            <div class="child-container">
+
+                <div class="container">
+
+                    <div class="row ev-padding">
+                        <div class="col-md-12 logo-padding-ev">
+                            <img src="{% static 'images/logo/Campus.png' %}" class="logo-width img-responsive">
+                        </div>
+
+                        <div class="col-md-12 all-heading-ev">
+
+                            Requested Successfully
+
+                        </div>
+
+                        <div class="col-md-12 greet">
+                            Dear {{u.fname}} {{u.lname}},
+                        </div>
+
+                        <div class="col-md-12 ev-desc">
+                            Thanks for Requesting!<br>
+                            {{message}}.
+                        </div>
+
+                        <div class="ev-btn-padding col-md-12">
+
+                            <button type="submit" class="btn ev-btn-style" onclick="location.href='{% url 'search' %}'">Go to Search Page</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

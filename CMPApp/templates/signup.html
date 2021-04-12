@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Important Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Campus-MarketPlace</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css'%}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/signup.css'%}">
+
+
+
+
+    <!-- Responsive CSS -->
+<!--    <link rel="stylesheet" href="css/responsive.css">-->
+
+</head>
+
+<body>
+
+    <div class="bg-image-main" id="signup-page">
+        <div class="inner-box">
+
+            <div id="logo" class="col-12" align="center">
+
+                <img src="{% static 'images/logo/Campus.png'%}" class="img-responsive">
+
+            </div>
+
+            <div class="child-container">
+
+
+                <div class="main-header">
+                  {% if x %}
+                  <h3 style="color:red;position:center;">Please enter valid enrollment number</h3>
+                  {% endif %}
+                    <h3>Create an Account</h3>
+
+                </div>
+
+                <div class="main-description">
+
+                    <p>Enter Enrollment Number and password to SignUp</p>
+
+                </div>
+
+
+                <form class="form-box" method="POST" id="register-form" action="{% url 'signup' %}" data-validate-username-url="{% url 'validate_username' %}">
+                  {% csrf_token %}
+
+                    <!-- <div class="form-group">
+                        <label for="firstName" class="form-label re">First Name</label>
+                        <input type="text" class="form-control form-box-content non-pass" id="firstName" aria-describedby="emailHelp" placeholder="Enter First Name" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="lastName" class="form-label re">Last Name</label>
+                        <input type="text" class="form-control form-box-content non-pass" id="lastName" aria-describedby="emailHelp" placeholder="Enter Last Name" required>
+                    </div> -->
+
+
+                    <div class="form-group">
+                        <label for="inputEmail" class="form-label re">Enrollment Number</label>
+                        <input type="text" name="enroll" class="form-control form-box-content non-pass js-validate-username" id="inputEnroll"  placeholder="Enter enrollment number" required>
+                    </div>
+                    <small id="emailHelp" class="form-text text-danger"></small>
+
+
+                    <div class="form-group">
+
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control form-box-content pass" id="inputPassword" name="password" placeholder="Password" required>
+                        <span class="show-hide-eye fa fa-fw fa-eye field-icon toggle-password" toggle="#inputPassword"></span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control form-box-content pass" id="confirmpassword" name="password" placeholder="Re-enter your Password" required>
+                        <span class="show-hide-eye fa fa-fw fa-eye field-icon toggle-password" toggle="#confirmpassword"></span>
+
+                    </div>
+
+
+
+                    <div class="credential-btn-padding">
+
+                        <button type="submit" class="btn credential-btn-style">Sign Up</button>
+
+                    </div>
+
+                    <div class="end-description-outer">
+
+                        <p class="end-description-content">Already have an account?<a href="{% url 'login' %}"> Login</a></p>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- <script src="{% static 'js/script1.js' %}"></script> -->
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+    $("#inputEnroll").change(function () {
+        console.log("1");
+         var form = $(this).closest("form");
+         console.log("2");
+         $.ajax({
+           url: form.attr("data-validate-username-url"),
+           data: form.serialize(),
+           dataType: 'json',
+           success: function (data) {
+             if(data.is_taken1)
+             {
+               document.getElementById("emailHelp").textContent = "User Already Exixts.";
+               document.getElementById('register-form').reset();
+             }
+             else {
+               document.getElementById("emailHelp").textContent = "";
+
+             }
+
+             if (!data.is_taken) {
+               console.log("Invalid");
+               alert("Invalid Enrollment Number");
+               document.getElementById('register-form').reset();
+             }
+           }
+         });
+
+       });
+
+       
+  </script>
+
+</body>
+
+</html>

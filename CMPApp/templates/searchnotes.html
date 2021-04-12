@@ -1,0 +1,170 @@
+{% extends 'Navigation.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="container-fluid bg-image-user img-responsive">
+
+        <div class="in-image user-profile-tag">Search Notes</div>
+
+    </div>
+
+    <div class="container">
+
+
+        <div class="row padding-im">
+
+            <div class="col-md-12 search-page-heading">
+                Search and Filter Resources
+            </div>
+        </div>
+
+        <form class="row bg-color-search padding-se-bottom" action="{% url 'search' %}" method="post">
+          {% csrf_token %}
+            <div class="col-md-12">
+
+                <div class="form-group has-search padding-searchbar">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" name="query" class="form-control searchbar-style" placeholder="Search">
+                </div>
+
+            </div>
+
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select name="type" class="form-control searchbar-style" placeholder="Select type">
+                   {# <option>Select type</option> #}
+                   <option value="All" selected>Select Type</option>
+                    <option value="Notes">Notes</option>
+                    <option value="Reference book">Reference Book</option>
+                    <option value="Instrument">Instrument</option>
+                </select>
+
+            </div>
+
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select name="branch" class="form-control searchbar-style" placeholder="Select type">
+                   {# <option>Select Branch</option> #}
+                    <option value="CSE/IT">CS/IT</option>
+                    <option value="CE">Civil</option>
+                    <option value="EC">Electronics & Communication</option>
+                    <option value="ME">Mechanical</option>
+                    {# <option value="IT">IT</option> #}
+                    <option value="PE">Production</option>
+                    <option value="All" selected>Select Branch</option>
+                </select>
+
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select name="pay" class="form-control searchbar-style" placeholder="Select type">
+                   {# <option>Select type</option> #}
+                   <option value="All" selected>Select Price</option>
+                    <option value="Free">Free</option>
+                    <option value="Paid">Paid</option>
+                </select>
+
+            </div>
+
+            <button class="btn addnotes-btn-style" type="submit">
+                Search
+            </button>
+<!--
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select class="form-control searchbar-style" placeholder="Select type">
+                   <option>Select university</option>
+                    <option value="abc">abc</option>
+                    <option value="bcd">bcd</option>
+                    <option value="cde">cde</option>
+                </select>
+
+            </div>
+
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select class="form-control searchbar-style" placeholder="Select type">
+                   <option>Select course</option>
+                    <option value="abc">abc</option>
+                    <option value="bcd">bcd</option>
+                    <option value="cde">cde</option>
+                </select>
+
+            </div>
+
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select class="form-control searchbar-style" placeholder="Select type">
+                   <option>Select country</option>
+                    <option value="abc">abc</option>
+                    <option value="bcd">bcd</option>
+                    <option value="cde">cde</option>
+                </select>
+
+            </div>
+
+            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+
+                <select class="form-control searchbar-style" placeholder="Select type">
+                   <option>Select rating</option>
+                    <option value="abc">abc</option>
+                    <option value="bcd">bcd</option>
+                    <option value="cde">cde</option>
+                </select>
+
+            </div> -->
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <div class="container">
+
+
+        <div class="row padding-im padding-se-bottom">
+
+            <div class="col-md-12 search-page-heading">
+                Total {{l}} notes
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+{% for i in r %}
+            <div class="col-md-4 col-sm-6 col-xs-12 padding-card">
+
+                <div class="card">
+                    <img class="card-img-top img-responsive" src="{{i.DP.url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="card-title card-title-style"><a href="details/{{i.id}}">{{i.Title}}<br><br></a></div>
+                        <div class="card-text pad-bot"><i class="fa fa-user"></i><span class="card-text-style"> Seller: {{i.user.fname}} {{i.user.lname}}</span></div>
+                        <div class="card-text pad-bot"><i class="fa fa-book"></i><span class="card-text-style"> Branch: {{i.Branch}}</span></div>
+                        <div class="card-text pad-bot"><i class="fa fa-book"></i><span class="card-text-style"> Category: {{i.Category}}</span></div>
+                        <div class="card-text pad-bot"><i class="fa fa-dollar"></i><span class="card-text-style"> Type: {{i.Type}}</span></div>
+                        {% if i.Type == "Paid" %}
+                        <div class="card-text pad-bot"><i class="fa fa-rupee"></i><span class="card-text-style"> Price: {{i.Price}}</span></div>
+                        {% endif %}
+                        {# <div class="card-text pad-bot"><i class="fa fa-calendar"></i><span class="card-text-style"> Uploaded at: </span></div> #}
+                    </div>
+                </div>
+
+            </div>
+
+{% endfor %}
+
+
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends 'Navigation.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="row margintop-100">
+
+            <div class="col-xl-6 col-md-12 col-sm-12 col-12 dash-heading-inner">Buyer Requests</div>
+          <!---  <div class="col-xl-6 col-md-12 col-sm-12 col-12 bbt" align="right">
+                <input type="text" class="search-box-style" placeholder="Search">
+                <span class="padding-bt-se"><button class="search-btn-style">Search</button></span>
+            </div> --->
+        </div>
+
+        <div class="row padding-bt-tb">
+
+            <!-- Table -->
+            <div class="col-xl-12">
+                <table>
+
+                    <table class="table table-border table-responsive-xl table-responsive-md table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="table-row-heading">SR NO.</th>
+                                <th scope="col" class="table-row-heading">NOTE TITLE</th>
+                                <th scope="col" class="table-row-heading">CATEGORY</th>
+                                <th scope="col" class="table-row-heading">ISBN</th>
+                                <th scope="col" class="table-row-heading">BUYER</th>
+                                <th scope="col" class="table-row-heading">Branch</th>
+                                <th scope="col" class="table-row-heading">SELL TYPE</th>
+                                <th scope="col" class="table-row-heading">PRICE</th>
+                                <!-- <th scope="col" class="table-row-heading">DOWNLOADED</th> -->
+                                <th scope="col" class="table-row-heading">DATE/TIME</th>
+                                <th scope="col" colspan="2" class="table-row-heading" style="text-align: center;">Action</th>
+                                {# <th scope="col" class="table-row-heading"></th> #}
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                          {% for i in r %}
+                            <tr>
+                                <td class="table-content">{{forloop.counter}}</td>
+                                <td class="table-content-diff">{{i.res.Title}}</td>
+                                <td class="table-content">{{i.res.Category}}</td>
+                                <td class="table-content">{{i.res.isbn}}</td>
+                                <td class="table-content">{{i.req.fname}} {{i.req.lname}}</td>
+                                <td class="table-content">{{i.res.Branch}}</td>
+                                <td class="table-content">{{i.res.Type}}</td>
+                                <td class="table-content">{{i.res.Price}}</td>
+                                <td class="table-content">{{i.created_on}}</td>
+                                <td><a href="approve/{{i.id}}"><button type="button" class="btn btn-success">Approve</button></a></td>
+                                <td><a href="reject/{{i.id}}"><button type="button" class="btn btn-danger">Reject</button></a></td>
+                                <!-- <td class="table-content">11:24:34</td> -->
+                                <!-- <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Allow Download</a>
+                                    </div>
+
+                                </td> -->
+                            </tr>
+                          {% endfor %}
+                        </tbody>
+                    </table>
+
+                </table>
+
+
+            </div>
+        </div>
+
+<!-- uploads -->
+        <div class="row margintop-100">
+
+            <div class="col-xl-6 col-md-12 col-sm-12 col-12 dash-heading-inner">My uploads</div>
+          <!---  <div class="col-xl-6 col-md-12 col-sm-12 col-12 bbt" align="right">
+                <input type="text" class="search-box-style" placeholder="Search">
+                <span class="padding-bt-se"><button class="search-btn-style">Search</button></span>
+            </div> --->
+        </div>
+
+        <div class="row padding-bt-tb">
+
+            <!-- Table -->
+            <div class="col-xl-12">
+                <table>
+
+                    <table class="table table-border table-responsive-xl table-responsive-md table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="table-row-heading">SR NO.</th>
+                                <th scope="col" class="table-row-heading">TITLE</th>
+                                <th scope="col" class="table-row-heading">ISBN</th>
+                                <th scope="col" class="table-row-heading">CATEGORY</th>
+                                <th scope="col" class="table-row-heading">Branch</th>
+                                <!-- <th scope="col" class="table-row-heading">PHONE NO.</th> -->
+                                <th scope="col" class="table-row-heading">SELL TYPE</th>
+                                <th scope="col" class="table-row-heading">PRICE</th>
+                                <!-- <th scope="col" class="table-row-heading">DOWNLOADED</th> -->
+                                <!-- <th scope="col" class="table-row-heading">DATE/TIME</th> -->
+                                <th scope="col" class="table-row-heading"></th>
+                                <!-- <th scope="col" class="table-row-heading"></th> -->
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                          {% for i in u %}
+                            <tr>
+                                <td class="table-content">{{forloop.counter}}</td>
+                                <td class="table-content-diff">{{i.Title}}</td>
+                                <td class="table-content-diff">{{i.isbn}}</td>
+                                <td class="table-content">{{i.Category}}</td>
+                                <td class="table-content">{{i.Branch}}</td>
+                                <!-- <td class="table-content">+91 9898989898</td> -->
+                                <td class="table-content">{{i.Type}}</td>
+                                <td class="table-content">{{i.Price}}</td>
+                                <td><a href="deletebook/{{i.id}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+                                <!-- <td class="table-content">{{i.created_on}}</td> -->
+                                <!-- <td class="table-content">11:24:34</td> -->
+
+                                <!-- <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Allow Download</a>
+                                    </div>
+
+                                </td> -->
+                            </tr>
+                          {% endfor %}
+                        </tbody>
+                    </table>
+
+                </table>
+
+
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

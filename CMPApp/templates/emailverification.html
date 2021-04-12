@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Important Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Notes-MarketPlace</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/emailverification.css' %}">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
+    <!-- Responsive CSS -->
+<!--    <link rel="stylesheet" href="css/responsive.css">-->
+
+</head>
+
+<body>
+
+    <div class="bg-image-main" id="ev">
+
+        <div class="inner-box">
+
+            <div class="child-container">
+
+                <div class="container">
+
+                    <div class="row ev-padding">
+                        <div class="col-md-12 logo-padding-ev">
+                            <img src="{% static 'images/logo/Campus.png' %}" class="logo-width img-responsive">
+                        </div>
+
+                        <div class="col-md-12 all-heading-ev">
+
+                            Email verification
+
+                        </div>
+
+                        <div class="col-md-12 greet">
+                            Dear {{u.fname}} {{u.lname}},
+                        </div>
+
+                        <div class="col-md-12 ev-desc">
+                            Thanks for Signing up!<br>
+                            Simply click below for email verification.
+                        </div>
+
+                        <div class="ev-btn-padding col-md-12">
+
+                            <button type="submit" class="btn ev-btn-style" onclick="location.href='{% url 'login' %}'">Go to Login Page</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

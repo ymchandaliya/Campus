@@ -1,0 +1,288 @@
+{% extends 'Navigation.html' %}
+{% load static %}
+    <!-- Note Detail Section -->
+{% block body %}
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12 note-detail-heading margintop">
+
+                Notes Details
+
+            </div>
+
+            <div class="col-xl-3 col-md-6 paddingbottom-20">
+
+                <img src="{{b.DP.url}}" class="img-responsive image-size" alt="bookimage">
+
+            </div>
+
+            <div class="col-xl-4 col-md-6 paddingbottom-20">
+                <div class="book-name">{{b.Title}}</div>
+                <div class="book-type">{{b.Category}}</div>
+                <div class="book-description">{{b.Description}}</div>
+                {% if user.is_authenticated %}
+                  {% if b.user.enroll == user.enroll %}
+                  <button class="btn download-btn" data-toggle="modal"  onclick="err()">Request</button>
+                  {% elif x %}
+                  <button class="btn download-btn" data-toggle="modal" disabled>Requested</button>
+                  {% else %}
+                  <a href="{% url 'details1' %}?book_id={{ b.id }}"><button class="btn download-btn" data-toggle="modal">Request</button></a>
+                  {% endif %}
+               {% else %}
+                <a href="{% url 'login' %}"><button class="btn download-btn" data-toggle="modal">Login</button></a>
+               {% endif %}
+            </div>
+
+            <div class="col-xl-5 col-md-12 paddingbottom-20">
+
+                <div>
+
+                    <span class="q-type">Course Name:</span>
+                    <span class="answer">{{b.Branch}}</span>
+
+                </div>
+
+                <div>
+
+                    <span class="q-type">Type:</span>
+                    <span class="answer">{{b.Type}}</span>
+
+                </div>
+
+                <div>
+
+                    <span class="q-type">Price:</span>
+                    <span class="answer">{{b.Price}}</span>
+
+                </div>
+
+                <div>
+
+                    <span class="q-type">ISBN:</span>
+                    <span class="answer">{{b.isbn}}</span>
+
+                </div>
+
+                <div>
+
+                    <span class="q-type">Uploaded By:</span>
+                    <span class="answer">{{b.user.fname}} {{b.user.lname}}</span>
+
+                </div>
+
+                <div>
+
+                    <span class="q-type">Enrollment Number:</span>
+                    <span class="answer">{{b.user.enroll}}</span>
+
+                </div>
+                <!---
+                <div>
+
+                    <span class="q-type">Rating:</span>
+                    <span class="answer">{{rating}}</span>
+
+                </div>
+                <div>
+
+                    <span class="q-type">Average:</span>
+                    <span class="answer">{{average}}</span>
+
+                </div>
+                --->
+
+<!---
+                <div>
+
+                    <span class="q-type">Rating</span>
+                    <span class="star-float"><i class="fa fa-star checked f-size"></i>
+                        <i class="fa fa-star checked f-size"></i>
+                        <i class="fa fa-star checked f-size"></i>
+                        <i class="fa fa-star-o f-size"></i>
+                        <i class="fa fa-star-o f-size"></i>
+                        <span class="answer-review">100 Reviews</span>
+                    </span>
+
+                </div>
+
+                <div class="inappropriate-message">
+                    5 users marked this note as inappropriate.
+                </div>
+
+            </div>
+--->
+
+            <div class="col-xl-12">
+                <div class="separate-line"></div>
+            </div>
+
+        </div>
+
+<!--- Preview
+        <div class="row">
+
+            <div class="col-xl-6 note-detail-heading">
+
+                Notes preview
+
+                <div class="ptop">
+
+                    <div class="iframe-pdf">
+                        <iframe src="http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf" width="600px" height="450px"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-6 note-detail-heading">
+
+                Customer Reviews
+
+                <div class="ptop">
+
+                    <div class="customer-box">
+
+                        <div class="container">
+
+                            <div class="row customer-padding">
+
+                                <img src="images/customers/user-1.jpg" class="customer-image">
+                                <span class="customer-name">
+                                    Richard Brown<br>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+
+                                <div>
+                                    <p class="customer-review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus quas nulla similique.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="container">
+                                <div class="row customer-review-line">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="container">
+
+                            <div class="row customer-padding">
+
+                                <img src="images/customers/user-1.jpg" class="customer-image">
+                                <span class="customer-name">
+                                    Richard Brown<br>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+
+                                <div>
+                                    <p class="customer-review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus quas nulla similique.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="container">
+                                <div class="row customer-review-line">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="container">
+
+                            <div class="row customer-padding">
+
+                                <img src="images/customers/user-1.jpg" class="customer-image">
+                                <span class="customer-name">
+                                    Richard Brown<br>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </span>
+
+                                <div>
+                                    <p class="customer-review-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt accusamus quas nulla similique.</p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+--->
+
+
+    <!-- popup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div class="center">
+                        <div class="tick-al">
+                            <p class="tick-tick">&#10003;</p>
+                        </div>
+                    </div>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="container modal-body">
+
+                    <div class="popup-title">
+                        Thank you for purchasing!
+                    </div>
+
+                    <div class="name-r">
+                        Dear Smith,
+                    </div>
+                    <div class="">
+                        <p class="message"><br>As this is a paid note you need to pay to sellerRahil Shah offline. We will send him an email that you want to download this note. He may contact you frther for payment process completion.<br><br>In case you have urgency.<br>Please contact us on +9195377345959.<br><br>Once he acknowledge us - selected notes you can see over my downloads tab for download.<br><br>Have a good day.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block script %}
+function err()
+{
+  alert("You can't request your own item");
+}
+{% endblock %}

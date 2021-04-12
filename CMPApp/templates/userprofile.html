@@ -1,0 +1,85 @@
+{% extends 'Navigation.html' %}
+{% load static %}
+
+{% block body %}
+
+    <div class="container-fluid bg-image-user img-responsive">
+
+        <div class="in-image user-profile-tag">User Profile</div>
+
+    </div>
+
+    <div class="container">
+
+        <form class="form-container" enctype="multipart/form-data" action="{% url 'profile' %}" method="post">
+          {% csrf_token %}
+
+
+            <!-- Basic Profile Details -->
+
+            <div class="row padding-im">
+
+                <div class="col-md-12 all-heading">
+                    Basic Profile Details
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+
+                    <div class="form-group">
+
+                        <label class="form-label re">First Name</label>
+                        <input type="text" class="form-control form-box-user" value="{{user.fname}}" id="fname" readonly>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+
+                        <label class="form-label re">Last Name</label>
+                        <input type="text" class="form-control form-box-user" value="{{user.lname}}" id="lname" readonly>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-6 form-group">
+
+                    <label class="form-label re">Email</label>
+                    <input type="email" class="form-control form-box-user" value="{{user.email}}" id="email" readonly>
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-6 form-group">
+
+                    <label class="form-label">Graduation Year</label>
+                    <input type="text" class="form-control form-box-user" id="dob" value="{{user.grad_year}}" readonly>
+
+                </div>
+                <div class="col-md-6 form-group">
+
+                    <label class="form-label">Display Picture</label>
+                    <input type="file" class="form-control form-box-user upload-back-img" name="picture" id="bookdisplaypicture">
+
+                </div>
+                {% if uploaded_file_url %}
+                  <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+                {% endif %}
+
+            </div>
+            <div class="credential-btn-padding">
+
+                <button type="submit" class="btn credential-btn-style btn-primary">Update</button>
+
+            </div>
+
+</div>
+
+
+</div>
+
+{% endblock %}

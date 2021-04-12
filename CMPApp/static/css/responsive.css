@@ -1,0 +1,466 @@
+/*=================================================
+
+All Responsive 
+
+=================================================*/ 
+
+@media only screen and (max-width: 950px) {
+    
+    .review-description {
+        font-size:16px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+    .card-title-style {
+        font-size: 14px;
+    }
+    .card-text-style {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .social-icons-alignment {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .cc-p {
+        margin-top: 0px;
+        text-align: center;
+        padding-left: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .ev-btn-style {
+        width :485px;
+    }
+    
+    .review-description {
+        font-size:16px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+    
+    .search-page-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+    .card-title-style {
+        font-size: 14px;
+    }
+    .card-text-style {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .child-container {
+        width: 500px;
+    }
+
+    .form-box {
+        padding-left: 50px;
+    }
+
+    .form-box-content {
+        width: 400px;
+    }
+
+    .credential-btn-style {
+        width: 400px;
+    }
+    
+    .ev-btn-style {
+        width: 440px;
+    }
+    .review-description {
+        font-size:16px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+    .user-profile-tag {
+        font-size: 35px;
+        text-align: center;
+    }
+    .all-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+    .form-box-user {
+        font-size: 12px;
+        height:35px; 
+    }
+    .form-label {
+        font-size: 12px;
+    }
+    .search-page-heading {
+        font-size: 18px;
+        text-align: center;
+    }
+    .card-title-style {
+        font-size: 14px;
+    }
+    .card-text-style {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 1210px) {
+    .na-elements {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    
+    .review-description {
+        font-size:16px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+    .child-container {
+        width: 420px;
+    }
+
+    .form-box {
+        padding-left: 45px;
+    }
+
+    .form-box-content {
+        width: 330px;
+    }
+
+    .credential-btn-style {
+        width: 330px;
+    }
+    
+    .ev-btn-style {
+        width: 360px;
+    }
+    .review-description {
+        font-size:14px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .child-container {
+        width: 340px;
+    }
+
+    .form-box {
+        padding-left: 35px;
+    }
+
+    .form-box-content {
+        width: 270px;
+    }
+
+    .credential-btn-style {
+        width: 270px;
+    }
+
+    .show-hide-eye {
+        position: absolute;
+        padding-left: 240px;
+    }
+    
+    .ev-btn-style {
+        width: 280px;
+    }
+    .home-heading {
+        font-size: 40px;
+    }
+    .home-text {
+        font-size: 16px;
+    }
+    .review-description {
+        font-size:12px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+    .form-box {
+        position: relative;
+    }
+    .forgot-password {
+        position: absolute;
+        text-align: center;
+        padding-left: 10px;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .child-container {
+        width: 320px;
+    }
+
+    .form-box {
+        padding-left: 25px;
+    }
+
+    .form-box-content {
+        width: 260px;
+    }
+
+    .credential-btn-style {
+        width: 260px;
+    }
+
+    .form-box-content {
+        position: relative;
+    }
+
+    a#forget-password {
+        position: absolute;
+        padding-top: 90px;
+    }
+
+    .c-p {
+        padding-top: 35px;
+    }
+
+    .show-hide-eye {
+        position: absolute;
+        padding-left: 230px;
+    }
+    
+    .ev-btn-style {
+        width: 260px;
+    }
+    .home-heading {
+        font-size: 35px;
+    }
+    .home-text {
+        font-size: 14px;
+    }
+    .review-description {
+        font-size:12px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .child-container {
+        width: 290px;
+    }
+
+    .form-box {
+        padding-left: 23px;
+    }
+
+    .form-box-content {
+        width: 244px;
+    }
+
+    .credential-btn-style {
+        width: 244px;
+    }
+
+    .form-box-content {
+        position: relative;
+    }
+
+    a#forget-password {
+        position: absolute;
+        padding-top: 90px;
+    }
+
+    .c-p {
+        padding-top: 35px;
+    }
+
+    .show-hide-eye {
+        position: absolute;
+        padding-left: 210px;
+    }
+
+    .ev-btn-style {
+        width: 230px;
+    }
+    .home-heading {
+        font-size: 30px;
+    }
+    .home-text {
+        font-size: 12px;
+    }
+    .review-description {
+        font-size:10px;
+    }
+    .bg-box-review {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dash-heading {
+        text-align: center;
+    }
+    .btn-center {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .dash-heading-inner {
+        text-align: center;
+    }
+    .bbt {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .number-text {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .number-text {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 990px) {
+    .number-text {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .number-description {
+        font-size: 12px;
+    }
+    .addnotes-btn-style {
+        width: 100px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .customer-box {
+        height: 450px;
+    }
+    .customer-image {
+        width: 40px;
+        height: 40px;
+    }
+    .star-al {
+        font-size: 16px;
+    }
+    .customer-name {
+        font-size: 16px;
+    }
+    .customer-review-desc {
+        padding-right: 20px;
+        font-size: 12px;
+        padding-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 426px) {
+    .customer-box {
+        height: 480px;
+    }
+    .customer-name {
+        font-size: 16px;
+    }
+    .customer-review-desc {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .q-type {
+        font-size: 14px;
+    }
+    .answer-review {
+        font-size: 14px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+    .f-size {
+        font-size: 14px;
+    }
+    .customer-box {
+        height: 530px;
+    }
+    .customer-name {
+        font-size: 16px;
+    }
+    .customer-review-desc {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .q-type {
+        font-size: 14px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+    .f-size {
+        font-size: 14px;
+    }
+    .answer-review {
+        font-size: 14px;
+    }
+    .customer-box {
+        height: 590px;
+    }
+    .customer-name {
+        font-size: 16px;
+    }
+    .customer-review-desc {
+        font-size: 12px;
+    }
+    .search-box-style {
+        width: 140px;
+    }
+    .search-btn-style {
+        width: 100px;
+    }
+    .number-text {
+        font-size: 10px;
+    }
+    .number-description {
+        font-size: 8px;
+    }
+    .dash-text {
+        font-size: 12px;
+    }
+}
+
+
+

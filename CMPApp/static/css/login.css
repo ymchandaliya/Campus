@@ -1,0 +1,313 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.bg-image-main {
+    background-image: url(../images/backgroung-image/banner-with-overlay.jpg);
+    height:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.inner-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.child-container {
+    margin-top: 25px;
+    width: 580px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+#login-page {
+    zoom: 75%;
+}
+
+
+
+.main-header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    padding-top: 50px;
+    text-align: center;
+}
+
+padding-description {
+    padding: 20px 30px 30px 30px;
+}
+
+.main-description {
+    text-align: center;
+    padding: 20px 30px 30px 30px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+}
+
+.form-label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+
+.paddingbottom-30 {
+    margin-bottom: 30px;
+}
+
+.form-box {
+    padding-left: 50px;
+}
+
+a:link {
+    color: #6255a5;
+}
+
+a:hover {
+    color: #6255a5;
+    text-decoration: none;
+}
+
+.form-box-content {
+    width: 480px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #6255a5;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.show-hide-eye {
+    font-size: 20px;
+    float: right;
+    margin-top: -50px;
+    margin-bottom: -12px;
+    padding-right: 80px;
+    padding-top: 17px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.credential-btn-padding {
+    padding-bottom: 20px;
+}
+
+.credential-btn-style {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6255a5;
+    width: 480px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.credential-btn-style:hover,
+.credential-btn-style:focus
+{
+    background-color: #6255a5;
+    border: none;
+    color: #fff;
+}
+
+.end-description-outer {
+    padding: 0 50px 50px 50px;
+}
+
+.end-description-content {
+    text-align: center;
+    padding-right: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.pass {
+    color: #8a8a8a;
+}
+
+.non-pass {
+    color: #000;
+}
+
+.margintop-20 {
+    margin-top: 50px;
+}
+.forgot-password {
+    float: right;
+    padding-right: 50px;
+}
+
+.remember-me-checkbox {
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+}
+
+
+.remember-me-tag {
+    padding-left: 10px;
+    padding-top: 7px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+/* responsive */
+
+
+@media only screen and (max-width: 650px) {
+    .child-container {
+        width: 500px;
+    }
+
+    .form-box {
+        padding-left: 50px;
+    }
+
+    .form-box-content {
+        width: 400px;
+    }
+    .credential-btn-style {
+        width: 400px;
+    }
+    .form-box-user {
+        font-size: 12px;
+        height:35px; 
+    }
+    .form-label {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .child-container {
+        width: 420px;
+    }
+
+    .form-box {
+        padding-left: 45px;
+    }
+
+    .form-box-content {
+        width: 330px;
+    }
+
+    .credential-btn-style {
+        width: 330px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .child-container {
+        width: 340px;
+    }
+
+    .form-box {
+        padding-left: 35px;
+    }
+
+    .form-box-content {
+        width: 270px;
+    }
+
+    .credential-btn-style {
+        width: 270px;
+    }
+
+    .show-hide-eye {
+        position: absolute;
+        padding-left: 240px;
+    }
+    .form-box {
+        position: relative;
+    }
+    .forgot-password {
+        position: absolute;
+        text-align: center;
+        padding-left: 10px;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .child-container {
+        width: 320px;
+    }
+
+    .form-box {
+        padding-left: 25px;
+    }
+
+    .form-box-content {
+        width: 260px;
+    }
+
+    .credential-btn-style {
+        width: 260px;
+    }
+
+    .form-box-content {
+        position: relative;
+    }
+    .show-hide-eye {
+        position: absolute;
+        padding-left: 230px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .child-container {
+        width: 290px;
+    }
+
+    .form-box {
+        padding-left: 23px;
+    }
+
+    .form-box-content {
+        width: 244px;
+    }
+
+    .credential-btn-style {
+        width: 244px;
+    }
+
+    .form-box-content {
+        position: relative;
+    }
+    .show-hide-eye {
+        position: absolute;
+        padding-left: 210px;
+    }
+}

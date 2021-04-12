@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Important Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Title -->
+    <title>Notes-MarketPlace</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <!-- NavBar -->
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg white-nav-top fixed-top">
+
+            <div class="container top-navbar-container">
+                <a href="./homepage.html" class="navbar-brand nav-image img-responsive"><img src="images/logo/logo.png" class="img-fluid"></a>
+
+                <button type="button" class="navbar-toggler navbar-brand" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars toggle-bar-style"></i></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="../BM/searchnotes.html">Search Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="#">Sell Your Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="../BM/buyerrequests.html"><span>Buyer Requests</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="../BM/FAQ.html"><span>FAQ</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="../BM/contactus.html"><span>Contact Us</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="profile-btn-style nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/customers/user-1.jpg" class="nav-user-image">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="../BM/userprofile.html">My Profile</a>
+                                    <a class="dropdown-item" href="../BM/mydownloads.html">My Downloads</a>
+                                    <a class="dropdown-item" href="../BM/mysoldnotes.html">My Sold Notes</a>
+                                    <a class="dropdown-item" href="../BM/myrejectednotes.html">My Rejected Notes</a>
+                                    <a class="dropdown-item" href="../BM/change-password.html">Change Password</a>
+                                    <a class="dropdown-item" href="#">LOGOUT</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <button type="submit" class="btn log-btn nav-link">Logout</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+    <div class="container">
+
+        <div class="row margintop-100">
+
+            <div class="col-xl-6 col-md-12 col-sm-12 col-12 dash-heading-inner">My Sold Notes</div>
+            <div class="col-xl-6 col-md-12 col-sm-12 col-12 bbt" align="right">
+                <input type="text" class="search-box-style" placeholder="Search">
+                <span class="padding-bt-se"><button class="search-btn-style">Search</button></span>
+            </div>
+        </div>
+
+        <div class="row padding-bt-tb">
+
+            <!-- Table -->
+            <div class="col-xl-12">
+                <table>
+
+                    <table class="table table-border table-responsive-xl table-responsive-md table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="table-row-heading">SR NO.</th>
+                                <th scope="col" class="table-row-heading">NOTE TITLE</th>
+                                <th scope="col" class="table-row-heading">CATEGORY</th>
+                                <th scope="col" class="table-row-heading">BUYER</th>
+                                <th scope="col" class="table-row-heading">SELL TYPE</th>
+                                <th scope="col" class="table-row-heading">PRICE</th>
+                                <th scope="col" class="table-row-heading">DOWNLOADED</th>
+                                <th scope="col" class="table-row-heading">DATE/TIME</th>
+                                <th scope="col" class="table-row-heading"></th>
+                                <th scope="col" class="table-row-heading"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="table-content">1</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">2</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">3</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">4</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">5</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">6</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">7</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">8</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">9</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-content">10</td>
+                                <td class="table-content-diff">Data Science</td>
+                                <td class="table-content">Science</td>
+                                <td class="table-content">testing123@gmail.com</td>
+                                <td class="table-content">Paid</td>
+                                <td class="table-content">$250</td>
+                                <td class="table-content">27 Nov 2020, 11:24:34</td>
+                                <td class="table-content">11:24:34</td>
+                                <td class="table-content"><i class="fa fa-eye"></i></td>
+                                <td class="table-content dropdown"><i class="fa fa-ellipsis-v"></i>
+
+                                    <div class="dropdown-content">
+                                        <a href="#">Download Note</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </table>
+
+
+            </div>
+
+
+            <div class="container">
+
+                <nav class="padding-bt-tb">
+
+                    <ul class="pagination justify-content-center">
+
+                        <li class="page-item"><a class="no-style" href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="page-item le-padding"><a class="no-style activepage" href="#">1</a></li>
+                        <li class="page-item in-padding"><a class="no-style" href="#">2</a></li>
+                        <li class="page-item in-padding"><a class="no-style" href="#">3</a></li>
+                        <li class="page-item in-padding"><a class="no-style" href="#">4</a></li>
+                        <li class="page-item in-padding"><a class="no-style" href="#">5</a></li>
+                        <li class="page-item re-padding"><a class="no-style" href="#"><i class="fa fa-angle-right"></i></a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer-border"></div>
+    <div class="container">
+        <div class="row footer-padding">
+
+            <div class="social-icons-alignment">
+
+                <span>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="cc-p">Copyright &#169; Tatvasoft All rights reserved.</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>

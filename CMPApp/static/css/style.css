@@ -1,0 +1,1382 @@
+/*==============================
+
+    Default 
+
+==============================*/
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/*==============================
+
+    Navigation
+
+==============================*/
+
+
+
+.transparent-nav {
+    background-color: transparent;
+}
+
+.transparent-nav ul.navbar-nav > li > a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+
+
+.transparent-nav ul.navbar-nav > li > button.log-btn {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+    color: #6255a5;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 0 10px;
+    width: 80px;
+}
+
+.top-navbar-container {
+    padding: 10px 0 10px 10px;
+}
+
+
+.transparent-nav ul.navbar-nav > li > a.nav-items:hover {
+    color: #6255a5;
+    border-bottom: 3px solid #6255a5;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.white-nav-top {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    margin: 0 10px;
+}
+
+.white-nav-top ul.navbar-nav > li > a.nav-items:hover {
+    color: #6255a5;
+    border-bottom: 3px solid #6255a5;
+}
+
+.nav-user-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.profile-btn-style {
+    border: transparent;
+    background-color: transparent;
+    margin: 0 10px;
+    margin-top: -4px;
+    outline: none !important;
+}
+
+.white-nav-top ul.navbar-nav > li > button.log-btn {
+    font-family: "Open Sans", sans-serif;
+    background-color: #6255a5;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0 0 0 10px;
+    width: 80px;
+}
+
+.white-nav-top ul.navbar-nav > li > button.log-btn:hover {
+    background-color: #4f4294;
+}
+
+.toggle-bar-style {
+    padding-top: 7px;
+    padding-left: 20px;
+    color: #6255a5;
+    font-size: 24px;
+}
+
+
+.nav-image {
+    max-height: 40px;
+    max-width: 63%;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+}
+
+.dropdown-item {
+    color: #333333 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #6255a5;
+    color: #fff !important;
+}
+
+/*==============================
+
+    Footer
+
+==============================*/
+
+.footer-border {
+    margin: 0;
+    margin-top: 50px;
+    width: 100%;
+    border-top: 1px solid #d1d1d1;
+}
+
+.footer-padding {
+    padding-top: 15px;
+}
+
+.social-icons-alignment {
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+ul.social-list li a {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #6255a5;
+    background-color: #6255a5;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    padding-right: 2px;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #3b5998;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #00aced;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background: #0e76a8;
+    border-color: transparent;
+}
+
+.cc-p {
+    margin-top: -50px;
+}
+
+
+
+
+
+/*===========================================================================================================================
+
+    User Profile
+
+============================================================================================================================*/
+
+.bg-image-user {
+    background-image: url(../images/backgroung-image/banner-with-overlay1.jpg);
+    height: 250px;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.in-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.user-profile-tag {
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #ffffff;
+}
+
+.padding-im {
+    padding-top: 60px;
+}
+
+.all-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    padding-bottom: 40px;
+}
+
+.form-box-user {
+    border: 1px solid #d1d1d1;
+    height: 50px;
+    border-radius: 3px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.upload-back-img {
+    height: 100px;
+    background-image: url(../images/backgroung-image/upload.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.user-submit-btn-style {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    background-color: #6255a5;
+    width: 150;
+    height: 40px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.user-submit-btn-style:hover {
+    border: none;
+    background-color: #4f4294;
+    color: #fff;
+}
+.paddingtop-50 {
+    padding-top: 50px;
+}
+
+
+.main-header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    padding-top: 50px;
+    text-align: center;
+}
+
+padding-description {
+    padding: 20px 30px 30px 30px;
+}
+
+.main-description {
+    text-align: center;
+    padding: 20px 30px 30px 30px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #333333;
+}
+
+.form-label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+
+.paddingbottom-30 {
+    margin-bottom: 30px;
+}
+
+.form-box {
+    padding-left: 50px;
+}
+
+a:link {
+    color: #6255a5;
+}
+
+a:hover {
+    color: #6255a5;
+    text-decoration: none;
+}
+
+.form-box-content {
+    width: 480px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #6255a5;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+
+/*===========================================================================================================================
+
+    Home
+
+============================================================================================================================*/
+
+.bg-image-home {
+    background-image: url(../images/backgroung-image/banner-with-overlay1.jpg);
+    height: 620px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: bottom;
+    position: relative;
+}
+
+.home-heading {
+    padding-top: 200px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #ffffff;
+}
+
+.home-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.learn-more-btn {
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    width: 172px;
+    height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.learn-more-btn:hover {
+    border: none;
+    color: #fff;
+    background-color: #4f4294;
+}
+
+.about-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ap-pa {
+    padding-top: 20px;
+}
+
+.about-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+}
+
+.about-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+
+.bg-color-work {
+    background-color: #f9f9f9;
+}
+
+.bg-download-seller {
+    background-image: url(../images/backgroung-image/seller.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+.bg-download-download {
+    background-image: url(../images/backgroung-image/download.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+.download-seller-heading {
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.download-seller-text {
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+
+.download-seller-btn {
+    border: 3px;
+    color: #fff;
+    background-color: #6255a5;
+    width: 172px;
+    height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    outline: none !important;
+}
+
+.download-seller-btn:hover {
+    color: #fff;
+    background-color: #4f4294;
+}
+
+.work-padding {
+    padding-bottom: 60px;
+}
+
+.re-pa {
+    padding-top: 20px;
+}
+
+.bg-box-review {
+    height: 278px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    margin: 15px 0px;
+}
+
+.customer-profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.customer-name1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #6255a5;
+}
+
+.na-pa {
+    padding-top: 20px;
+}
+
+.customer-designation {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333333;
+}
+
+.de-pa {
+    padding-top: 30px;
+}
+
+.review-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333333;
+}
+
+.margin-im {
+    margin-top: 60px;
+}
+
+
+/*===========================================================================================================================
+
+    Search
+
+============================================================================================================================*/
+
+.bg-color-search {
+    background-color: #f9f9f9;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.search-page-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+    padding-bottom: 20px;
+}
+
+.padding-searchbar {
+    padding-top: 30px;
+}
+
+.searchbar-style {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+
+.padding-select {
+    padding-bottom: 10px;
+}
+
+.padding-se-bottom {
+    padding-bottom: 20px;
+}
+
+.padding-card {
+    padding-bottom: 30px;
+}
+
+.card-title-style {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #6255a5;
+}
+
+.pad-bot {
+    padding-bottom: 15px;
+}
+
+.card-text-style {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.card-text-style-last {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #df3434;
+}
+
+
+.checked {
+    color: rgb(254, 193, 6);
+}
+
+.f-size {
+    font-size: 20px;
+}
+
+.page-no-margin {
+    margin-top: 50px;
+}
+
+.le-padding {
+    padding-left: 0px;
+    padding-left: 5px;
+}
+
+.in-padding {
+    padding-left: 0px;
+    padding-left: 5px;
+}
+
+.re-padding {
+    padding-left: 5px;
+}
+
+.no-style {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+
+.pagination li a {
+    color: black;
+    float: left;
+    padding: 9px 15px;
+    text-decoration: none;
+}
+
+.activepage {
+    background-color: #6255a5;
+    color: #fff !important;
+    border-radius: 50%;
+}
+
+.pagination li a.active {
+    background-color: #6255a5;
+    width: 34px;
+    height: 34px;
+    color: white;
+    border-radius: 50%;
+}
+
+.pagination li a:hover:not(.active) {
+    background-color: #6255a5;
+    border-radius: 50%;
+    color: white;
+}
+
+
+
+/*===========================================================================================================================
+
+    Note details 
+
+============================================================================================================================*/
+.margintop {
+    margin-top: 80px;
+}
+
+.note-detail-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+    padding-bottom: 20px;
+}
+
+.paddingbottom-20 {
+    padding-bottom: 20px;
+}
+
+.image-size {
+    width: 240px;
+    height: 300px;
+}
+
+.book-name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #6255a5;
+    padding-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.book-type {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+    padding-bottom: 0px;
+    padding-bottom: 25px;
+}
+
+.book-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+    padding-bottom: 0px;
+    padding-bottom: 25px;
+}
+
+.download-btn {
+    font-family: "Open Sans", sans-serif;
+    background-color: #6255a5;
+    width: 204px;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.download-btn:hover {
+    background-color: #4f4294;
+    color: #fff;
+    outline: none !important;
+    border: none;
+}
+
+.q-type {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #333333;
+}
+
+
+.answer {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #6255a5;
+    float: right;
+}
+
+.star-float {
+    float: right;
+}
+
+.answer-review {
+    padding-left: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #6255a5;
+}
+
+.separate-line {
+    margin-top: 60px;
+    border-top: 1px solid #d1d1d1;
+    padding-bottom: 60px;
+}
+
+.inappropriate-message {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #df3434;
+}
+
+.ptop {
+    padding-top: 20px;
+}
+
+.iframe-pdf {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 450px;
+    overflow: hidden;
+}
+
+
+.iframe-pdf iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.customer-box {
+    border: 1px solid #d1d1d1;
+    height: 450px;
+    border-radius: 3px;
+}
+
+.customer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.customer-padding {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.customer-name {
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+}
+
+.star-al {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 200px;
+}
+
+.customer-review-desc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+    padding-left: 60px;
+}
+
+
+.customer-review-line {
+    border-top: 1px solid #d1d1d1;
+}
+
+
+/* popup */
+
+
+.center {
+    display: block;
+    margin-left: auto;
+}
+
+.tick-al {
+    padding-top: 30px;
+}
+
+.tick-tick {
+    text-align: center;
+    font-size: 40px;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    align-content: center;
+    color: #fff;
+    background-color: #6255a5;
+}
+
+.popup-title {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #6255a5;
+}
+
+.name-r {
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+.message {
+    padding-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+
+
+/*===========================================================================================================================
+ 
+    Common CSS for dashboard, mysold notes, myrejected notes, mydownloads, buyerrequests
+
+============================================================================================================================*/
+
+
+.dash-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #6255a5;
+}
+
+.space-padding {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.btn-center {
+    margin-top: -10px;
+}
+
+.add-notes-btn-style {
+    background-color: #6255a5;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    float: right;
+}
+
+.add-notes-btn-style:hover {
+    background-color: #4f4294;
+    color: #fff;
+}
+
+.box {
+    display: flex;
+    height: 130px;
+    border: 2px solid #d1d1d1;
+    position: relative;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    height: 130px;
+    border: 2px solid #d1d1d1;
+    border-left: 0px;
+    position: relative;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box2 {
+    display: flex;
+    height: 130px;
+    border: 2px solid #d1d1d1;
+    border-right: 0px;
+    border-left: 0px;
+    position: relative;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.padding-r {
+    padding-right: 0px;
+}
+
+.padding-l {
+    padding-left: 0px;
+}
+
+.c-c {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dash-text {
+    padding-top: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #6255a5;
+}
+
+.number-text {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #6255a5;
+    padding-bottom: 10px;
+}
+
+.number-description {
+    padding-top: 15px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #333333;
+}
+
+
+.dash-heading-inner {
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.search-box-style {
+    padding-left: 15px;
+    /*    width: 322px;*/
+    height: 50px;
+    border: 1px solid #d1d1d1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #8a8a8a;
+    border-radius: 3px;
+}
+
+.search-btn-style {
+    border: none;
+    /*    width: 117px;*/
+    height: 50px;
+    background-color: #6255a5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.search-btn-style:hover {
+    background-color: #4f4294;
+    color: #fff;
+}
+
+.padding-bt-se {
+    padding-left: 10px;
+}
+
+.padding-bt-tb {
+    padding-top: 30px;
+}
+
+
+.table-border {
+    border: 1px solid #d1d1d1;
+}
+
+.table-row-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+}
+
+.table-content {
+    font-size: 14px;
+}
+
+.table-content-diff {
+    font-size: 14px;
+    color: #6255a5;
+}
+
+tr:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.margintop-60 {
+    margin-top: 60px;
+}
+
+.st {
+    width: 42px;
+    height: 42px;
+}
+
+
+.form-box-addnotes {
+    border: 1px solid #d1d1d1;
+    height: 145px;
+    border-radius: 3px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.addnotes-btn-style {
+    background-color: #6255a5;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.addnotes-btn-style:hover {
+    background-color: #4f4294;
+    color: #fff;
+    border: none;
+}
+
+.padding-bt-btn {
+    padding-left: 20px;
+}
+
+/* My Download */
+
+.margintop-100 {
+    margin-top: 100px;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* Add Review Popup */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.form-box-modal {
+    border: 1px solid #d1d1d1;
+    height: 500px;
+    border-radius: 3px;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.modal-heading {
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #6255a5;
+}
+
+.modal-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #6255a5;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    /*    line-height: px;*/
+    color: #fff;
+}
+
+.modal-btn:hover {
+    background-color: #4f4240;
+    color: #fff;
+}
+
+.modal-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* FAQ Accordion */
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.active {
+    background-color: #fff;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    outline: none;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #d1d1d1;
+    border-top: none;
+}
+
+.acc-btn-style {
+    outline: none !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+.bb-box {
+    border: 1px solid #d1d1d1;
+}
+
+.ptop-15 {
+    padding-top: 15px;
+}
+
+.pp {
+    padding-top: 50px;
+}
+
+
+/* Contact Us Section */
+
+.comment-box {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+}

@@ -1,0 +1,385 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Important Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Title -->
+    <title>Campus-MarketPlace</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome/css/font-awesome.min.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="65">
+
+    <!-- NavBar -->
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg white-nav-top fixed-top">
+
+            <div class="container top-navbar-container">
+                <a href="{% url 'home' %}" class="navbar-brand nav-image img-responsive"><img src="{% static 'images/logo/Campus.png' %}" class="img-fluid"></a>
+
+                <button type="button" class="navbar-toggler navbar-brand" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars toggle-bar-style"></i></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'search' %}">Search Resources</a>
+                        </li>
+
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'share' %}">Sell/Donate</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-items nav-link" href="../BM/buyerrequests.html"><span>Buyer Requests</span></a>
+                        </li> -->
+                        {% endif %}
+
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'faq' %}"><span>FAQ</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-items nav-link" href="{% url 'contact' %}"><span>Contact Us</span></a>
+                        </li>
+
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <div class="dropdown">
+                              {% if user.avtar %}
+                                <button class="profile-btn-style nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="{{user.avtar.url}}" class="nav-user-image">
+                                </button>
+                                {% else %}
+                                <button class="profile-btn-style nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="{% static 'images/customers/customer-1.png' %}" class="nav-user-image">
+                                </button>
+                                {% endif %}
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
+                                    <a class="dropdown-item" href="{% url 'dashboard' %}">My Dashboard</a>
+                                    <!-- <a class="dropdown-item" href="../BM/mysoldnotes.html">Requests</a> -->
+                                    <a class="dropdown-item" href="{% url 'newrequests' %}">My Requested Notes</a>
+                                    <a class="dropdown-item" href="../BM/change-password.html">Change Password</a>
+                                    <a class="dropdown-item" href="{% url 'logout' %}">LOGOUT</a>
+                                </div>
+                            </div>
+                        </li>
+                        {% endif %}
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <button type="submit" class="btn log-btn nav-link" onclick="location.href='{% url 'logout' %}'">Logout</button>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <button type="submit" class="btn log-btn nav-link" onclick="location.href='{% url 'signup' %}'">SignUp</button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="submit" class="btn log-btn nav-link" onclick="location.href='{% url 'login' %}'">Login</button>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div class="container-fluid bg-image-home img-responsive">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-8">
+
+                    <h3 class="home-heading">Download Free/Paid Notes or Sale Your Book</h3>
+                    <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste id hic, sint eveniet adipisci assumenda, commodi.</p>
+                    <button class="btn learn-more-btn" onclick="location.href='#learnmore'">Learn More</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+    <div class="container" id="learnmore">
+
+        <div class="row about-padding">
+
+            <div class="col-md-4 col-sm-12 col-12 about-heading">
+
+                <h3>About<br>NotesMarketPlace</h3>
+
+            </div>
+
+            <div class="col-md-8 col-sm-12 col-12 about-description">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit voluptatem labore doloremque suscipit beatae delectus recusandae praesentium. Cupiditate hic natus maiores quidem praesentium quod porro corporis eveniet doloribus culpa! Cupiditate hic natus maiores quidem praesentium quod.</p>
+
+                <p class="ap-pa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa velit voluptatem labore doloremque suscipit beatae delectus recusandae praesentium. Cupiditate hic natus maiores quidem praesentium quod porro.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Work Section -->
+    <div class="container-fluid bg-color-work">
+
+        <div class="container">
+
+            <div class="row about-padding">
+
+                <div class="col-md-12" align="center">
+                    <h3 class="about-heading">How it Works</h3>
+                </div>
+
+            </div>
+
+            <div class="row work-padding">
+
+                <div class="col-md-6" align="center">
+                    <div class="bg-download-download"></div>
+                    <h3 class="download-seller-heading">Download Free/Paid Notes</h3>
+                    <span class="download-seller-text">Get Material for your<br> Course etc.</span>
+                    <br><br><button class="btn download-seller-btn">Download</button><br><br>
+                </div>
+
+                <div class="col-md-6" align="center">
+                    <div class="bg-download-seller"></div>
+                    <h3 class="download-seller-heading">Seller</h3>
+                    <span class="download-seller-text">Upload and Download Course<br>and Materials etc.</span>
+                    <br><br><button class="btn download-seller-btn">Sell Book</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Customer Review -->
+    <div class="container">
+
+        <div class="row about-padding">
+
+            <div class="col-md-12 about-heading" align="center">What Our Customers are Saying</div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="bg-box-review container">
+
+
+
+                    <div class="row re-pa">
+
+                       <div class="col-xl-3 col-md-4 col-sm-12">
+
+                            <img src="{% static 'images/customers/customer-1.png' %}" class="customer-profile-photo">
+                       </div>
+
+                        <div class="col-xl-9 col-md-8 col-sm-12 na-pa">
+
+                            <span class="customer-name1">Walter Meller</span><br>
+                            <span class="customer-designation">Founder & CEO, Matrix Group</span>
+
+                        </div>
+
+                        <div class="col-md-12 de-pa">
+                            <i class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos aliquid recusandae aperiam ipsa quia vel doloribus.</i>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="bg-box-review container">
+                    <div class="row re-pa">
+
+
+                       <div class="col-xl-3 col-md-4 col-sm-12">
+
+                            <img src="{% static 'images/customers/customer-2.png' %}" class="customer-profile-photo">
+                       </div>
+
+                        <div class="col-xl-9 col-md-8 col-sm-12 na-pa">
+
+                            <span class="customer-name1">Jonnie Riley</span><br>
+                            <span class="customer-designation">Employee, Curious Snakcs</span>
+
+                        </div>
+
+                        <div class="col-md-12 de-pa">
+                            <i class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos aliquid recusandae aperiam ipsa quia vel doloribus.</i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="bg-box-review container">
+                    <div class="row re-pa">
+
+
+                       <div class="col-xl-3 col-md-4 col-sm-12">
+
+                            <img src="{% static 'images/customers/customer-3.png' %}" class="customer-profile-photo">
+                       </div>
+
+                        <div class="col-xl-9 col-md-8 col-sm-12 na-pa">
+
+                            <span class="customer-name1">Amilia Luna</span><br>
+                            <span class="customer-designation">Teacher, Saint Joseph High School</span>
+
+                        </div>
+
+                        <div class="col-md-12 de-pa">
+                            <i class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos aliquid recusandae aperiam ipsa quia vel doloribus.</i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="bg-box-review container">
+                    <div class="row re-pa">
+<!--
+                        <div class="col-md-4">
+
+
+                        </div>
+-->
+
+                       <div class="col-xl-3 col-md-4 col-sm-12">
+
+                            <img src="{% static 'images/customers/customer-4.png' %}" class="customer-profile-photo">
+                       </div>
+
+                        <div class="col-xl-9 col-md-8 col-sm-12 na-pa">
+
+                            <span class="customer-name1">Daniel Cardos</span><br>
+                            <span class="customer-designation">Software Engineer, Infinitium Company</span>
+
+                        </div>
+
+                        <div class="col-md-12 de-pa">
+                            <i class="review-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos aliquid recusandae aperiam ipsa quia vel doloribus.</i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer-border"></div>
+    <div class="container">
+        <div class="row footer-padding">
+
+            <div class="social-icons-alignment">
+
+                <span>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="cc-p">Copyright &#169; Tatvasoft All rights reserved.</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- Custom JS -->
+    <!-- <script src="{% static 'js/scripthome.js' %}"></script> -->
+
+</body>
+
+</html>
