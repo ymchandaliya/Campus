@@ -51,7 +51,7 @@ body {
     font-size: 26px;
     font-weight: 600;
     line-height: 30px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .greet {
@@ -78,7 +78,7 @@ body {
 }
 
 .ev-btn-style {
-    background-color:#6255a5;
+    background-color:#1362a5;
     width: 520px;
     height: 50px;
     border-radius: 3px;
@@ -93,7 +93,7 @@ body {
 .ev-btn-style:focus {
     color: #fff;
     border: none;
-    background-color: #4f4294;
+    background-color: #1a81d8;
 }
 
 /* Responsive */

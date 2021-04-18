@@ -107,10 +107,10 @@
 
                         </tbody>
                     </table>
-                    <form action="{% url 'newrequests' %}" method="post" class="col-xl-6 col-md-12 col-sm-12 col-12 bbt">
+                    <form action="{% url 'newrequests' %}" method="post" class="col-xl-6 col-md-12 col-sm-12 col-12 bbt" style="padding: 0;">
                       {% csrf_token %}
                           <input type="text" name="isbn" class="search-box-style" placeholder="Enter ISBN">
-                          <span class="padding-bt-se"><button type="submit" class="search-btn-style">Add</button></span>
+                          <span class="padding-bt-se"><button type="submit" class="btn search-btn-style" style="width: 100px;">Add</button></span>
                     </form>
                 </table>
 

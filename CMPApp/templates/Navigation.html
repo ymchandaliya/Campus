@@ -45,7 +45,7 @@
         <nav class="navbar navbar-expand-lg white-nav-top fixed-top">
 
             <div class="container top-navbar-container">
-                <a href="{% url 'home' %}" class="navbar-brand nav-image img-responsive"><img src="{% static 'images/logo/Campus.png' %}" class="img-fluid"></a>
+                <a href="{% url 'home' %}" class="navbar-brand nav-image img-responsive"><img src="{% static 'images/logo/Campus2.png' %}" class="img-fluid"></a>
 
                 <button type="button" class="navbar-toggler navbar-brand" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars toggle-bar-style"></i></span>
@@ -101,7 +101,7 @@
                         {% endif %}
                         {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <button type="submit" class="btn log-btn nav-link" onclick="location.href='{% url 'logout' %}'">Logout</button>
+                            <button type="submit" class="btn log-btn nav-link" onclick="if(confirm('Are you sure, you want to logout?')) location.href='{% url 'logout' %}'">Logout</button>
                         </li>
                         {% else %}
                         <li class="nav-item">
@@ -123,7 +123,7 @@
 
     <!-- Footer Section -->
     <div class="footer-border"></div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row footer-padding">
 
             <div class="social-icons-alignment">

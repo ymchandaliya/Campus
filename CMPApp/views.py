@@ -11,7 +11,7 @@ from django.contrib.auth.models import auth
 from django.urls import reverse_lazy
 from .models import *
 from CMP.settings import EMAIL_HOST_USER
-from verify_email.email_handler import send_verification_email
+#from verify_email.email_handler import send_verification_email
 from django.core.mail import send_mail
 from django.contrib import messages
 from django.core.files.storage import FileSystemStorage
@@ -106,7 +106,7 @@ def login(request):
             #     'uploaded_file_url': uploaded_file_url
             # })
 
-            return render(request,'userprofile.html')
+            return render(request,'searchnotes.html')
         else:
             return HttpResponseRedirect(reverse_lazy(login))
     else:

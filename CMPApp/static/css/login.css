@@ -45,13 +45,13 @@ body {
     font-size: 34px;
     font-weight: 600;
     line-height: 38px;
-    color: #6255a5;
+    color: #1362a5;
     padding-top: 50px;
     text-align: center;
 }
 
-padding-description {
-    padding: 20px 30px 30px 30px;
+.padding-description {
+    padding: 10px 30px 30px 30px;
 }
 
 .main-description {
@@ -82,11 +82,11 @@ padding-description {
 }
 
 a:link {
-    color: #6255a5;
+    color: #1362a5;
 }
 
 a:hover {
-    color: #6255a5;
+    color: #1362a5;
     text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ a:hover {
     width: 480px;
     height: 50px;
     border-radius: 3px;
-    border: 1px solid #6255a5;
+    border: 1px solid #1362a5;
     font-family: "Open-Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -122,7 +122,7 @@ a:hover {
     line-height: 22px;
     font-weight: 600;
     color: #fff;
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 480px;
     height: 50px;
     border-radius: 3px;
@@ -131,7 +131,7 @@ a:hover {
 .credential-btn-style:hover,
 .credential-btn-style:focus
 {
-    background-color: #6255a5;
+    background-color: #1362a5;
     border: none;
     color: #fff;
 }

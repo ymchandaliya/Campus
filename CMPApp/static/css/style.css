@@ -9,6 +9,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: white;
 }
 
 
@@ -43,7 +44,7 @@ body {
     border: none;
     font-weight: 600;
     border-radius: 3px;
-    color: #6255a5;
+    color: #1362a5;
     font-size: 16px;
     line-height: 22px;
     margin: 0 0 0 10px;
@@ -56,8 +57,8 @@ body {
 
 
 .transparent-nav ul.navbar-nav > li > a.nav-items:hover {
-    color: #6255a5;
-    border-bottom: 3px solid #6255a5;
+    color: #1362a5;
+    border-bottom: 3px solid #1362a5;
 }
 
 .navbar-toggler {
@@ -65,7 +66,7 @@ body {
 }
 
 .white-nav-top {
-    background-color: #fff;
+    background-color: white;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -80,13 +81,13 @@ body {
 }
 
 .white-nav-top ul.navbar-nav > li > a.nav-items:hover {
-    color: #6255a5;
-    border-bottom: 3px solid #6255a5;
+    color: #1362a5;
+    border-bottom: 3px solid #1362a5;
 }
 
 .nav-user-image {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -94,13 +95,13 @@ body {
     border: transparent;
     background-color: transparent;
     margin: 0 10px;
-    margin-top: -4px;
+    padding: 0;
     outline: none !important;
 }
 
 .white-nav-top ul.navbar-nav > li > button.log-btn {
     font-family: "Open Sans", sans-serif;
-    background-color: #6255a5;
+    background-color: #1362a5;
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -112,13 +113,13 @@ body {
 }
 
 .white-nav-top ul.navbar-nav > li > button.log-btn:hover {
-    background-color: #4f4294;
+    background-color: #1a81d8;
 }
 
 .toggle-bar-style {
     padding-top: 7px;
     padding-left: 20px;
-    color: #6255a5;
+    color: #1362a5;
     font-size: 24px;
 }
 
@@ -136,7 +137,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: #6255a5;
+    background-color: #1362a5;
     color: #fff !important;
 }
 
@@ -155,6 +156,9 @@ body {
 
 .footer-padding {
     padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
 }
 
 .social-icons-alignment {
@@ -171,8 +175,8 @@ ul.social-list li {
 ul.social-list li a {
     position: relative;
     z-index: 1;
-    border: 1px solid #6255a5;
-    background-color: #6255a5;
+    border: 1px solid #1362a5;
+    background-color: #1362a5;
     width: 35px;
     height: 35px;
     display: inline-block;
@@ -247,7 +251,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-size: 34px;
     font-weight: 600;
     line-height: 38px;
-    color: #6255a5;
+    color: #1362a5;
     padding-bottom: 40px;
 }
 
@@ -273,7 +277,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-size: 18px;
     line-height: 22px;
     color: #fff;
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 150;
     height: 40px;
     border-radius: 3px;
@@ -282,7 +286,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 .user-submit-btn-style:hover {
     border: none;
-    background-color: #4f4294;
+    background-color: #1a81d8;
     color: #fff;
 }
 .paddingtop-50 {
@@ -295,7 +299,7 @@ ul.social-list li:nth-child(3) a:hover {
     font-size: 34px;
     font-weight: 600;
     line-height: 38px;
-    color: #6255a5;
+    color: #1362a5;
     padding-top: 50px;
     text-align: center;
 }
@@ -332,11 +336,11 @@ padding-description {
 }
 
 a:link {
-    color: #6255a5;
+    color: #1362a5;
 }
 
 a:hover {
-    color: #6255a5;
+    color: #1362a5;
     text-decoration: none;
 }
 
@@ -344,7 +348,7 @@ a:hover {
     width: 480px;
     height: 50px;
     border-radius: 3px;
-    border: 1px solid #6255a5;
+    border: 1px solid #1362a5;
     font-family: "Open-Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -402,7 +406,7 @@ a:hover {
 .learn-more-btn:hover {
     border: none;
     color: #fff;
-    background-color: #4f4294;
+    background-color: #1a81d8;
 }
 
 .about-padding {
@@ -419,7 +423,7 @@ a:hover {
     font-size: 34px;
     font-weight: 600;
     line-height: 38px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .about-description {
@@ -460,7 +464,7 @@ a:hover {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .download-seller-text {
@@ -475,7 +479,7 @@ a:hover {
 .download-seller-btn {
     border: 3px;
     color: #fff;
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 172px;
     height: 50px;
     font-family: "Open Sans", sans-serif;
@@ -487,7 +491,7 @@ a:hover {
 
 .download-seller-btn:hover {
     color: #fff;
-    background-color: #4f4294;
+    background-color: #1a81d8;
 }
 
 .work-padding {
@@ -516,7 +520,7 @@ a:hover {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .na-pa {
@@ -555,7 +559,7 @@ a:hover {
 ============================================================================================================================*/
 
 .bg-color-search {
-    background-color: #f9f9f9;
+    background-color: #e2f2ff;
 }
 
 .has-search .form-control {
@@ -579,7 +583,7 @@ a:hover {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
-    color: #6255a5;
+    color: #1362a5;
     padding-bottom: 20px;
 }
 
@@ -610,15 +614,16 @@ a:hover {
 }
 
 .card-title-style {
+    height: 50px;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .pad-bot {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .card-text-style {
@@ -680,13 +685,13 @@ a:hover {
 }
 
 .activepage {
-    background-color: #6255a5;
+    background-color: #1362a5;
     color: #fff !important;
     border-radius: 50%;
 }
 
 .pagination li a.active {
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 34px;
     height: 34px;
     color: white;
@@ -694,7 +699,7 @@ a:hover {
 }
 
 .pagination li a:hover:not(.active) {
-    background-color: #6255a5;
+    background-color: #1362a5;
     border-radius: 50%;
     color: white;
 }
@@ -715,7 +720,7 @@ a:hover {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
-    color: #6255a5;
+    color: #1362a5;
     padding-bottom: 20px;
 }
 
@@ -733,7 +738,7 @@ a:hover {
     font-size: 34px;
     font-weight: 600;
     line-height: 38px;
-    color: #6255a5;
+    color: #1362a5;
     padding-bottom: 0px;
     padding-bottom: 15px;
 }
@@ -760,7 +765,7 @@ a:hover {
 
 .download-btn {
     font-family: "Open Sans", sans-serif;
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 204px;
     height: 50px;
     border-radius: 3px;
@@ -770,7 +775,7 @@ a:hover {
 }
 
 .download-btn:hover {
-    background-color: #4f4294;
+    background-color: #1a81d8;
     color: #fff;
     outline: none !important;
     border: none;
@@ -790,7 +795,7 @@ a:hover {
     font-size: 18px;
     font-weight: 600;
     line-height: 36px;
-    color: #6255a5;
+    color: #1362a5;
     float: right;
 }
 
@@ -804,7 +809,7 @@ a:hover {
     font-size: 18px;
     font-weight: 600;
     line-height: 36px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .separate-line {
@@ -908,7 +913,7 @@ a:hover {
     border-radius: 50%;
     align-content: center;
     color: #fff;
-    background-color: #6255a5;
+    background-color: #1362a5;
 }
 
 .popup-title {
@@ -917,7 +922,7 @@ a:hover {
     font-size: 26px;
     font-weight: 600;
     line-height: 30px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .name-r {
@@ -951,7 +956,7 @@ a:hover {
     font-size: 34px;
     line-height: 38px;
     font-weight: 600;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .space-padding {
@@ -964,7 +969,7 @@ a:hover {
 }
 
 .add-notes-btn-style {
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 150px;
     height: 50px;
     border-radius: 3px;
@@ -977,7 +982,7 @@ a:hover {
 }
 
 .add-notes-btn-style:hover {
-    background-color: #4f4294;
+    background-color: #1a81d8;
     color: #fff;
 }
 
@@ -1044,7 +1049,7 @@ a:hover {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .number-text {
@@ -1053,7 +1058,7 @@ a:hover {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
-    color: #6255a5;
+    color: #1362a5;
     padding-bottom: 10px;
 }
 
@@ -1074,7 +1079,7 @@ a:hover {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .search-box-style {
@@ -1094,7 +1099,7 @@ a:hover {
     border: none;
     /*    width: 117px;*/
     height: 50px;
-    background-color: #6255a5;
+    background-color: #1362a5;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -1104,7 +1109,7 @@ a:hover {
 }
 
 .search-btn-style:hover {
-    background-color: #4f4294;
+    background-color: #1a81d8;
     color: #fff;
 }
 
@@ -1135,7 +1140,7 @@ a:hover {
 
 .table-content-diff {
     font-size: 14px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 tr:hover {
@@ -1164,7 +1169,7 @@ tr:hover {
 
 
 .addnotes-btn-style {
-    background-color: #6255a5;
+    background-color: #1362a5;
     width: 150px;
     height: 50px;
     border-radius: 3px;
@@ -1176,7 +1181,7 @@ tr:hover {
 }
 
 .addnotes-btn-style:hover {
-    background-color: #4f4294;
+    background-color: #1a81d8;
     color: #fff;
     border: none;
 }
@@ -1279,13 +1284,13 @@ tr:hover {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
-    color: #6255a5;
+    color: #1362a5;
 }
 
 .modal-btn {
     width: 100px;
     height: 50px;
-    background-color: #6255a5;
+    background-color: #1362a5;
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 600;
@@ -1308,7 +1313,7 @@ tr:hover {
 
 
 .accordion {
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -1322,7 +1327,7 @@ tr:hover {
 }
 
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #b3ebff;
 }
 
 .active {

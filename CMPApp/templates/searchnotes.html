@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block body %}
-    <div class="container-fluid bg-image-user img-responsive">
+    <div class="container-fluid bg-image-user img-responsive" style="margin-top: 50px;">
 
         <div class="in-image user-profile-tag">Search Notes</div>
 
@@ -29,7 +29,7 @@
 
             </div>
 
-            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+            <div class="col-md-3 padding-select">
 
                 <select name="type" class="form-control searchbar-style" placeholder="Select type">
                    {# <option>Select type</option> #}
@@ -41,7 +41,7 @@
 
             </div>
 
-            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+            <div class="col-md-3 padding-select">
 
                 <select name="branch" class="form-control searchbar-style" placeholder="Select type">
                    {# <option>Select Branch</option> #}
@@ -55,7 +55,7 @@
                 </select>
 
             </div>
-            <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
+            <div class="col-md-3 padding-select">
 
                 <select name="pay" class="form-control searchbar-style" placeholder="Select type">
                    {# <option>Select type</option> #}
@@ -66,9 +66,15 @@
 
             </div>
 
-            <button class="btn addnotes-btn-style" type="submit">
-                Search
-            </button>
+            <div class="col-md-3 padding-select">
+
+                <button class="btn addnotes-btn-style" type="submit" style="height: 38px; width: 100%">
+                    Search
+                </button>
+
+            </div>
+
+            
 <!--
             <div class="col-xl-2 col-md-4 col-sm-6 padding-select">
 
@@ -128,7 +134,7 @@
         <div class="row padding-im padding-se-bottom">
 
             <div class="col-md-12 search-page-heading">
-                Total {{l}} notes
+                Total {{l}} Items
             </div>
         </div>
 
@@ -139,19 +145,19 @@
 
         <div class="row">
 {% for i in r %}
-            <div class="col-md-4 col-sm-6 col-xs-12 padding-card">
+            <div class="col-md-3 col-sm-6 col-xs-12 padding-card">
 
                 <div class="card">
-                    <img class="card-img-top img-responsive" src="{{i.DP.url}}" alt="Card image cap">
+                    <img class="card-img-top img-responsive" src="{{i.DP.url}}" alt="Card image cap" style="height: 280px; border-bottom: 1px solid #d1d1d1;">
                     <div class="card-body">
-                        <div class="card-title card-title-style"><a href="details/{{i.id}}">{{i.Title}}<br><br></a></div>
+                        <div class="card-title card-title-style"><a href="details/{{i.id}}" style="color: #1362a5;">{{i.Title}}<br><br></a></div>
                         <div class="card-text pad-bot"><i class="fa fa-user"></i><span class="card-text-style"> Seller: {{i.user.fname}} {{i.user.lname}}</span></div>
                         <div class="card-text pad-bot"><i class="fa fa-book"></i><span class="card-text-style"> Branch: {{i.Branch}}</span></div>
                         <div class="card-text pad-bot"><i class="fa fa-book"></i><span class="card-text-style"> Category: {{i.Category}}</span></div>
-                        <div class="card-text pad-bot"><i class="fa fa-dollar"></i><span class="card-text-style"> Type: {{i.Type}}</span></div>
-                        {% if i.Type == "Paid" %}
+                        <div class="card-text pad-bot"><i class="fa fa-circle-o"></i><span class="card-text-style"> Type: {{i.Type}}</span></div>
+                        
                         <div class="card-text pad-bot"><i class="fa fa-rupee"></i><span class="card-text-style"> Price: {{i.Price}}</span></div>
-                        {% endif %}
+                        
                         {# <div class="card-text pad-bot"><i class="fa fa-calendar"></i><span class="card-text-style"> Uploaded at: </span></div> #}
                     </div>
                 </div>
