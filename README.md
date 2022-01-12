@@ -1,0 +1,3 @@
+Campus Market Place is a platform through which students of the college/university can sell/donate and buy used/new resources such as Notes, Reference Books and Instruments. This platform helps in increasing interaction between students and alumni. Unique feature of the platform is only students who are currently enrolled or previously enrolled can use the platform. 
+Students are registered based on enrollment number and his/her registered email id is verified so it is secure as only college/university students/alumni can register and they can be identified easily if any misbehaving happens.
+Tech stack used: Python, AJAX, JavaScript, HTML, CSS, Django, Bootstrap, API, Flask
